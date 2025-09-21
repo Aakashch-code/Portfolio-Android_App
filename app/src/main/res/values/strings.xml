@@ -12,16 +12,21 @@
     <string name="menu_slideshow">Slideshow</string>
     <string name="name">Aakash Chauhan</string>
     <string name="role">Android Developer</string>
-    <string name="description">I’m a passionate software developer who loves turning ideas into real-world applications. I have a strong foundation in Java, Data Structures &amp; Algorithms, and Android development, and enjoy building solutions that are both user-friendly and technically solid.
+    <string name="description">
+I’m Aakash Harishchandra Chauhan, a passionate Android developer and tech enthusiast, currently in my second year of BE in Electronics &amp; Telecommunication Engineering (EXTC). Even though my branch is not primarily focused on programming, I’ve always been fascinated by coding and love turning ideas into real world applications.
 
-One of my key projects is Intelli Wealth, a full-featured finance manager app built using modern Android practices like MVVM architecture, Room DB, and MPAndroidChart for data visualization. I focus on writing clean, scalable code and continuously improving my skills.
+My main interest lies in Android development, where I specialize in backend integration, API handling (including Gemini API and other third party REST APIs using Retrofit), and cloud storage with Firebase — skills I am continuing to strengthen with hands on practice.
 
-These days, I’m exploring AI-powered applications, GenAI integration, cloud development with OCI, and backend solutions using Firebase. I love experimenting with new technologies and APIs to create smarter, more interactive apps, while always aiming to deliver meaningful experiences for users.</string>
+One of my proudest projects is Intelli Wealth, a production level finance manager app that boosted my confidence and taught me how to build scalable, user friendly solutions. I’ve also explored MERN development, but I discovered my true passion lies in Android development and creating smooth, interactive mobile experiences.
 
-    <string name="project_number">2+</string>
+Recently, I’ve been expanding into AI powered applications. I completed the Oracle Race to Certification program in Generative AI and gained practical experience with Oracle Cloud Infrastructure (OCI). Exploring the intersection of mobile apps and AI excites me the most, and I’m always curious to learn, experiment, and improve with every project.
+
+For me, coding is not just about writing programs it’s about solving problems, learning continuously, and building technology that makes a difference.
+</string>
+    <string name="project_number">4+</string>
     <string name="projects">Projects</string>
     <string name="Experience">Fresher</string>
-    <string name="tech_numbers">5+</string>
+    <string name="tech_numbers">25+</string>
     <string name="technologies_number">Technologies</string>
     <string name="java">Java</string>
     <string name="mvvm">MVVM</string>
@@ -38,19 +43,4 @@ These days, I’m exploring AI-powered applications, GenAI integration, cloud de
     <string name="contact">Contact</string>
     <string name="mail">aakashch.code@gmail.com</string>
     <string name="location">Mumbai, India</string>
-    <string name="About_Me">Hi, I’m Aakash Harishchandra Chauhan, a backend-focused Android app developer using Android Studio. I also have experience creating basic front-end interfaces with XML.
-
-Main Skills: Android Studio, Java, XML, Room DB, API integration, SHA-256, GitHub Gist
-
-I am currently in my second year of Bachelor of Engineering in Electronics and Telecommunication (ExTc).
-
-I have worked on projects that solve real-world problems, including:
-
-Finance Manage – an app that helps young people analyze and manage their money effectively.
-
-FitProof App – an app that verifies data from Google Fit. Through this project, I gained hands-on experience and confidence in API integration, GitHub Gist, and SHA-256 encryption.
-
-I am also exploring the field of Generative AI, having completed courses from Oracle GenAI and AI Agent Studio, and I strive to stay updated with the latest technologies to create innovative and practical solutions.</string>
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

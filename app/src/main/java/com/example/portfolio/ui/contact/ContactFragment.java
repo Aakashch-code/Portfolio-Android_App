@@ -49,12 +49,11 @@ public class ContactFragment extends Fragment {
         });
 
         btnTwitter.setOnClickListener(v -> {
-            String twitterUrl = "https://twitter.com/Aakashch_code"; // fallback to old twitter URL
+            String twitterUrl = "https://twitter.com/Aakashch_code";
             Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(twitterUrl));
             try {
                 startActivity(intent);
             } catch (android.content.ActivityNotFoundException e) {
-                // If no app can handle the intent, show a toast or do nothing
                 Toast.makeText(getContext(), "No app found to open Twitter", Toast.LENGTH_SHORT).show();
             }
         });
