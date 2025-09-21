@@ -9,6 +9,8 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageButton;
 import android.widget.LinearLayout;
+import android.widget.Toast;
+
 import com.example.portfolio.R;
 
 public class ContactFragment extends Fragment {
@@ -47,10 +49,17 @@ public class ContactFragment extends Fragment {
         });
 
         btnTwitter.setOnClickListener(v -> {
-            Intent intent = new Intent(Intent.ACTION_VIEW);
-            intent.setData(Uri.parse("https://x.com/Aakashch_code"));
-            startActivity(intent);
+            String twitterUrl = "https://twitter.com/Aakashch_code"; // fallback to old twitter URL
+            Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(twitterUrl));
+            try {
+                startActivity(intent);
+            } catch (android.content.ActivityNotFoundException e) {
+                // If no app can handle the intent, show a toast or do nothing
+                Toast.makeText(getContext(), "No app found to open Twitter", Toast.LENGTH_SHORT).show();
+            }
         });
+
+
 
         btnInstagram.setOnClickListener(v -> {
             Intent intent = new Intent(Intent.ACTION_VIEW);
