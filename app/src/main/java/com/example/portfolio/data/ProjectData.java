@@ -18,7 +18,7 @@ public class ProjectData {
                 "Portfolio",
                 "Personal Portfolio App showcasing projects and skills",
                 R.drawable.portoflio,
-                "",
+                "https://github.com/Aakashch-code/Portfolio",
                 Arrays.asList("Java", "Android")
         ));
 

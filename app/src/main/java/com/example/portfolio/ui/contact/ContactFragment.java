@@ -54,7 +54,7 @@ public class ContactFragment extends Fragment {
 
         btnInstagram.setOnClickListener(v -> {
             Intent intent = new Intent(Intent.ACTION_VIEW);
-            intent.setData(Uri.parse("https://www.instagram.com/yourusername"));
+            intent.setData(Uri.parse("https://www.instagram.com/aakashch_90/?hl=en"));
             startActivity(intent);
         });
 
