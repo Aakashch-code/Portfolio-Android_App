@@ -1,0 +1,56 @@
+<resources>
+    <string name="app_name">Portfolio</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Aakash Chauhan</string>
+    <string name="nav_header_subtitle">aakashch.code@gmail.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <string name="name">Aakash Chauhan</string>
+    <string name="role">Android Developer</string>
+    <string name="description">I’m a passionate software developer who loves turning ideas into real-world applications. I have a strong foundation in Java, Data Structures &amp; Algorithms, and Android development, and enjoy building solutions that are both user-friendly and technically solid.
+
+One of my key projects is Intelli Wealth, a full-featured finance manager app built using modern Android practices like MVVM architecture, Room DB, and MPAndroidChart for data visualization. I focus on writing clean, scalable code and continuously improving my skills.
+
+These days, I’m exploring AI-powered applications, GenAI integration, cloud development with OCI, and backend solutions using Firebase. I love experimenting with new technologies and APIs to create smarter, more interactive apps, while always aiming to deliver meaningful experiences for users.</string>
+
+    <string name="project_number">2+</string>
+    <string name="projects">Projects</string>
+    <string name="Experience">Fresher</string>
+    <string name="tech_numbers">5+</string>
+    <string name="technologies_number">Technologies</string>
+    <string name="java">Java</string>
+    <string name="mvvm">MVVM</string>
+    <string name="room_database">Room Database</string>
+    <string name="get_in_touch">Get In Touch</string>
+    <string name="email">Email</string>
+    <string name="linkedin">LinkedIn</string>
+    <string name="github">GitHub</string>
+    <string name="skills_amp_technologies"><![CDATA[Skills & Technologies]]></string>
+    <string name="featured_projects">Featured Projects</string>
+    <string name="view_all">View All</string>
+    <string name="mpandroidchart">MPAndroidChart</string>
+    <string name="achievements">Achievements</string>
+    <string name="contact">Contact</string>
+    <string name="mail">aakashch.code@gmail.com</string>
+    <string name="location">Mumbai, India</string>
+    <string name="About_Me">Hi, I’m Aakash Harishchandra Chauhan, a backend-focused Android app developer using Android Studio. I also have experience creating basic front-end interfaces with XML.
+
+Main Skills: Android Studio, Java, XML, Room DB, API integration, SHA-256, GitHub Gist
+
+I am currently in my second year of Bachelor of Engineering in Electronics and Telecommunication (ExTc).
+
+I have worked on projects that solve real-world problems, including:
+
+Finance Manage – an app that helps young people analyze and manage their money effectively.
+
+FitProof App – an app that verifies data from Google Fit. Through this project, I gained hands-on experience and confidence in API integration, GitHub Gist, and SHA-256 encryption.
+
+I am also exploring the field of Generative AI, having completed courses from Oracle GenAI and AI Agent Studio, and I strive to stay updated with the latest technologies to create innovative and practical solutions.</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

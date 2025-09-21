@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:title="@string/menu_home" />
+        <item
+            android:id="@+id/nav_aboot_me"
+            android:title="About Me" />
+        <item
+            android:id="@+id/nav_achievements"
+            android:title="@string/achievements" />
+        <item
+            android:id="@+id/nav_projects"
+            android:title="@string/projects" />
+        <item
+            android:id="@+id/nav_contact"
+            android:title="@string/contact" />
+
+
+
+
+    </group>
+</menu>

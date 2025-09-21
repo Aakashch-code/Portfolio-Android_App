@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Pressed state (slightly brighter) -->
+    <item android:state_pressed="true">
+        <shape android:shape="rectangle">
+            <solid android:color="#5C6BC0" /> <!-- Lighter Royal Blue -->
+            <corners android:radius="12dp" />
+        </shape>
+    </item>
+
+    <!-- Focused state (slightly dimmer) -->
+    <item android:state_focused="true">
+        <shape android:shape="rectangle">
+            <solid android:color="#3949AB" /> <!-- Slightly darker -->
+            <corners android:radius="12dp" />
+        </shape>
+    </item>
+
+    <!-- Default state -->
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="#3F51B5" /> <!-- Base Royal Blue -->
+            <corners android:radius="12dp" />
+        </shape>
+    </item>
+
+</selector>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="100dp"
+    android:height="100dp"
+    android:viewportWidth="100"
+    android:viewportHeight="100">
+
+    <!-- Background circle -->
+    <path
+        android:fillColor="#2563eb"
+        android:strokeColor="#1e40af"
+        android:strokeWidth="2"
+        android:pathData="M50,5 A45,45 0 1,1 50,95 A45,45 0 1,1 50,5 Z" />
+
+    <!-- Top left triangle -->
+    <path
+        android:fillColor="#60a5fa"
+        android:fillAlpha="0.8"
+        android:pathData="M50,20 L65,35 L65,50 L50,35 Z" />
+
+    <!-- Bottom right triangle -->
+    <path
+        android:fillColor="#3b82f6"
+        android:fillAlpha="0.9"
+        android:pathData="M50,35 L65,50 L65,65 L50,50 Z" />
+
+    <!-- Top right triangle -->
+    <path
+        android:fillColor="#60a5fa"
+        android:fillAlpha="0.8"
+        android:pathData="M35,35 L50,20 L50,35 L35,50 Z" />
+
+    <!-- Bottom left triangle -->
+    <path
+        android:fillColor="#3b82f6"
+        android:fillAlpha="0.9"
+        android:pathData="M35,50 L50,35 L50,50 L35,65 Z" />
+
+    <!-- Center diamond -->
+    <path
+        android:fillColor="#ffffff"
+        android:fillAlpha="0.95"
+        android:pathData="M50,30 L60,40 L50,50 L40,40 Z" />
+
+    <!-- Accent dots -->
+    <path
+        android:fillColor="#ffffff"
+        android:fillAlpha="0.7"
+        android:pathData="M50,72 A3,3 0 1,1 50,78 A3,3 0 1,1 50,72 Z" />
+
+    <path
+        android:fillColor="#ffffff"
+        android:fillAlpha="0.5"
+        android:pathData="M35,73 A2,2 0 1,1 35,77 A2,2 0 1,1 35,73 Z" />
+
+    <path
+        android:fillColor="#ffffff"
+        android:fillAlpha="0.5"
+        android:pathData="M65,73 A2,2 0 1,1 65,77 A2,2 0 1,1 65,73 Z" />
+
+</vector>

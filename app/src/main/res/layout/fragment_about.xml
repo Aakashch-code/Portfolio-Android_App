@@ -1,0 +1,572 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/dark_background"
+    android:fillViewport="true">
+
+    <!-- Main container for profile content -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Profile Header Section -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            app:cardBackgroundColor="#0F172A"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="12dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="24dp"
+                android:gravity="center">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/iv_profile"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:layout_marginBottom="16dp"
+                    android:src="@drawable/pic2"
+                    app:civ_border_color="#22D3EE"
+                    app:civ_border_width="4dp" />
+
+                <TextView
+                    android:id="@+id/tv_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:text="@string/name"
+                    android:textColor="#F8FAFC"
+                    android:textSize="26sp"
+                    android:textStyle="bold"
+                    android:letterSpacing="0.02" />
+
+                <TextView
+                    android:id="@+id/tv_role"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="12dp"
+                    android:text="@string/role"
+                    android:textColor="#FBBF24"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tv_bio"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/description"
+                    android:textColor="#CBD5E1"
+                    android:textSize="16sp"
+                    android:textAlignment="center"
+                    android:lineSpacingExtra="6dp" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- Stats Section -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:orientation="horizontal"
+            android:weightSum="3">
+
+            <!-- Projects Card -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginEnd="8dp"
+                app:cardBackgroundColor="#1E293B"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="6dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="16dp"
+                    android:gravity="center">
+
+                    <TextView
+                        android:id="@+id/tv_projects_count"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="4dp"
+                        android:text="@string/project_number"
+                        android:textColor="#60A5FA"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/projects"
+                        android:textColor="#E2E8F0"
+                        android:textSize="12sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- Technologies Card -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginHorizontal="8dp"
+                app:cardBackgroundColor="#1E293B"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="6dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="16dp"
+                    android:gravity="center">
+
+                    <TextView
+                        android:id="@+id/tv_tech_count"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="4dp"
+                        android:text="@string/tech_numbers"
+                        android:textColor="#10B981"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/technologies_number"
+                        android:textColor="#E2E8F0"
+                        android:textSize="12sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- Experience Card -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginStart="8dp"
+                app:cardBackgroundColor="#1E293B"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="6dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="16dp"
+                    android:gravity="center">
+
+                    <TextView
+                        android:id="@+id/tv_experience_years"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="4dp"
+                        android:text="@string/Experience"
+                        android:textColor="#FBBF24"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Years"
+                        android:textColor="#E2E8F0"
+                        android:textSize="12sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+
+        <!-- Skills Section -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            app:cardBackgroundColor="#0F172A"
+            app:cardCornerRadius="12dp"
+            app:cardElevation="6dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="12dp"
+                    android:text="@string/skills_amp_technologies"
+                    android:textColor="#F1F5F9"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <com.google.android.material.chip.ChipGroup
+                    android:id="@+id/chip_group_skills"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:chipSpacingHorizontal="8dp"
+                    app:chipSpacingVertical="8dp">
+
+                    <!-- Skill Chips -->
+                    <com.google.android.material.chip.Chip
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Java"
+                        android:textColor="#60A5FA"
+                        android:textStyle="bold"
+                        app:chipBackgroundColor="#1E293B"
+                        app:chipCornerRadius="10dp"
+                        app:chipStrokeColor="#60A5FA"
+                        app:chipStrokeWidth="1dp" />
+
+                    <com.google.android.material.chip.Chip
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Android Development"
+                        android:textColor="#10B981"
+                        android:textStyle="bold"
+                        app:chipBackgroundColor="#1E293B"
+                        app:chipCornerRadius="10dp"
+                        app:chipStrokeColor="#10B981"
+                        app:chipStrokeWidth="1dp" />
+
+                    <com.google.android.material.chip.Chip
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="MVVM"
+                        android:textColor="#A78BFA"
+                        android:textStyle="bold"
+                        app:chipBackgroundColor="#1E293B"
+                        app:chipCornerRadius="10dp"
+                        app:chipStrokeColor="#A78BFA"
+                        app:chipStrokeWidth="1dp" />
+
+                    <com.google.android.material.chip.Chip
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="REST APIs"
+                        android:textColor="#22D3EE"
+                        android:textStyle="bold"
+                        app:chipBackgroundColor="#1E293B"
+                        app:chipCornerRadius="10dp"
+                        app:chipStrokeColor="#22D3EE"
+                        app:chipStrokeWidth="1dp" />
+
+                    <com.google.android.material.chip.Chip
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Firebase"
+                        android:textColor="#F59E0B"
+                        android:textStyle="bold"
+                        app:chipBackgroundColor="#1E293B"
+                        app:chipCornerRadius="10dp"
+                        app:chipStrokeColor="#F59E0B"
+                        app:chipStrokeWidth="1dp" />
+
+                    <com.google.android.material.chip.Chip
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Cloud Integration"
+                        android:textColor="#EF4444"
+                        android:textStyle="bold"
+                        app:chipBackgroundColor="#1E293B"
+                        app:chipCornerRadius="10dp"
+                        app:chipStrokeColor="#EF4444"
+                        app:chipStrokeWidth="1dp" />
+
+                    <com.google.android.material.chip.Chip
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Artificial Intelligence (AI)"
+                        android:textColor="#F97316"
+                        android:textStyle="bold"
+                        app:chipBackgroundColor="#1E293B"
+                        app:chipCornerRadius="10dp"
+                        app:chipStrokeColor="#F97316"
+                        app:chipStrokeWidth="1dp" />
+
+                    <com.google.android.material.chip.Chip
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Generative AI (GenAI)"
+                        android:textColor="#60A5FA"
+                        android:textStyle="bold"
+                        app:chipBackgroundColor="#1E293B"
+                        app:chipCornerRadius="10dp"
+                        app:chipStrokeColor="#60A5FA"
+                        app:chipStrokeWidth="1dp" />
+
+                    <com.google.android.material.chip.Chip
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="OCI"
+                        android:textColor="#10B981"
+                        android:textStyle="bold"
+                        app:chipBackgroundColor="#1E293B"
+                        app:chipCornerRadius="10dp"
+                        app:chipStrokeColor="#10B981"
+                        app:chipStrokeWidth="1dp" />
+
+                    <com.google.android.material.chip.Chip
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="OAuth"
+                        android:textColor="#A78BFA"
+                        android:textStyle="bold"
+                        app:chipBackgroundColor="#1E293B"
+                        app:chipCornerRadius="10dp"
+                        app:chipStrokeColor="#A78BFA"
+                        app:chipStrokeWidth="1dp" />
+
+                    <com.google.android.material.chip.Chip
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Oracle Cloud Infrastructure 2025 Certified Generative AI Professional"
+                        android:textColor="#F97316"
+                        android:textStyle="bold"
+                        app:chipBackgroundColor="#1E293B"
+                        app:chipCornerRadius="10dp"
+                        app:chipStrokeColor="#F97316"
+                        app:chipStrokeWidth="1dp" />
+
+                    <com.google.android.material.chip.Chip
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Natural Language Processing (NLP)"
+                        android:textColor="#60A5FA"
+                        android:textStyle="bold"
+                        app:chipBackgroundColor="#1E293B"
+                        app:chipCornerRadius="10dp"
+                        app:chipStrokeColor="#60A5FA"
+                        app:chipStrokeWidth="1dp" />
+
+                    <com.google.android.material.chip.Chip
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Prompt Engineering"
+                        android:textColor="#10B981"
+                        android:textStyle="bold"
+                        app:chipBackgroundColor="#1E293B"
+                        app:chipCornerRadius="10dp"
+                        app:chipStrokeColor="#10B981"
+                        app:chipStrokeWidth="1dp" />
+
+                    <com.google.android.material.chip.Chip
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Oracle Cloud Infrastructure 2025 Certified Developer Professional"
+                        android:textColor="#A78BFA"
+                        android:textStyle="bold"
+                        app:chipBackgroundColor="#1E293B"
+                        app:chipCornerRadius="10dp"
+                        app:chipStrokeColor="#A78BFA"
+                        app:chipStrokeWidth="1dp" />
+
+                    <com.google.android.material.chip.Chip
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Cloud Computing"
+                        android:textColor="#22D3EE"
+                        android:textStyle="bold"
+                        app:chipBackgroundColor="#1E293B"
+                        app:chipCornerRadius="10dp"
+                        app:chipStrokeColor="#22D3EE"
+                        app:chipStrokeWidth="1dp" />
+
+                    <com.google.android.material.chip.Chip
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Architecture"
+                        android:textColor="#F59E0B"
+                        android:textStyle="bold"
+                        app:chipBackgroundColor="#1E293B"
+                        app:chipCornerRadius="10dp"
+                        app:chipStrokeColor="#F59E0B"
+                        app:chipStrokeWidth="1dp" />
+
+                    <com.google.android.material.chip.Chip
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="DevOps"
+                        android:textColor="#EF4444"
+                        android:textStyle="bold"
+                        app:chipBackgroundColor="#1E293B"
+                        app:chipCornerRadius="10dp"
+                        app:chipStrokeColor="#EF4444"
+                        app:chipStrokeWidth="1dp" />
+
+                    <com.google.android.material.chip.Chip
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Application Development"
+                        android:textColor="#F97316"
+                        android:textStyle="bold"
+                        app:chipBackgroundColor="#1E293B"
+                        app:chipCornerRadius="10dp"
+                        app:chipStrokeColor="#F97316"
+                        app:chipStrokeWidth="1dp" />
+
+                    <com.google.android.material.chip.Chip
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="API Management"
+                        android:textColor="#60A5FA"
+                        android:textStyle="bold"
+                        app:chipBackgroundColor="#1E293B"
+                        app:chipCornerRadius="10dp"
+                        app:chipStrokeColor="#60A5FA"
+                        app:chipStrokeWidth="1dp" />
+
+                    <com.google.android.material.chip.Chip
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Oracle Database"
+                        android:textColor="#10B981"
+                        android:textStyle="bold"
+                        app:chipBackgroundColor="#1E293B"
+                        app:chipCornerRadius="10dp"
+                        app:chipStrokeColor="#10B981"
+                        app:chipStrokeWidth="1dp" />
+
+                    <com.google.android.material.chip.Chip
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Security in Cloud"
+                        android:textColor="#A78BFA"
+                        android:textStyle="bold"
+                        app:chipBackgroundColor="#1E293B"
+                        app:chipCornerRadius="10dp"
+                        app:chipStrokeColor="#A78BFA"
+                        app:chipStrokeWidth="1dp" />
+
+                    <com.google.android.material.chip.Chip
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Networking (OCI-specific)"
+                        android:textColor="#22D3EE"
+                        android:textStyle="bold"
+                        app:chipBackgroundColor="#1E293B"
+                        app:chipCornerRadius="10dp"
+                        app:chipStrokeColor="#22D3EE"
+                        app:chipStrokeWidth="1dp" />
+
+                    <com.google.android.material.chip.Chip
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Problem Solving"
+                        android:textColor="#F59E0B"
+                        android:textStyle="bold"
+                        app:chipBackgroundColor="#1E293B"
+                        app:chipCornerRadius="10dp"
+                        app:chipStrokeColor="#F59E0B"
+                        app:chipStrokeWidth="1dp" />
+
+                    <com.google.android.material.chip.Chip
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Android SDK"
+                        android:textColor="#EF4444"
+                        android:textStyle="bold"
+                        app:chipBackgroundColor="#1E293B"
+                        app:chipCornerRadius="10dp"
+                        app:chipStrokeColor="#EF4444"
+                        app:chipStrokeWidth="1dp" />
+
+                    <com.google.android.material.chip.Chip
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Git"
+                        android:textColor="#22D3EE"
+                        android:textStyle="bold"
+                        app:chipBackgroundColor="#1E293B"
+                        app:chipCornerRadius="10dp"
+                        app:chipStrokeColor="#22D3EE"
+                        app:chipStrokeWidth="1dp" />
+                </com.google.android.material.chip.ChipGroup>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- Contact Section -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardBackgroundColor="#1E293B"
+            app:cardCornerRadius="12dp"
+            app:cardElevation="6dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="16dp"
+                    android:text="Social Media"
+                    android:textColor="#F8FAFC"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    android:weightSum="3">
+
+                    <ImageButton
+                        android:id="@+id/btn_email"
+                        android:layout_width="0dp"
+                        android:layout_height="48dp"
+                        android:layout_weight="1"
+                        android:layout_marginEnd="8dp"
+                        android:background="@drawable/stat_card_bg"
+                        android:src="@drawable/ic_email"
+                        android:contentDescription="@string/email"
+                        app:tint="#FFFFFF" />
+
+                    <ImageButton
+                        android:id="@+id/btn_linkedin"
+                        android:layout_width="0dp"
+                        android:layout_height="48dp"
+                        android:layout_weight="1"
+                        android:layout_marginHorizontal="8dp"
+                        android:background="@drawable/stat_card_bg"
+                        android:src="@drawable/ic_linkedin"
+                        android:contentDescription="@string/linkedin"
+                        app:tint="#FFFFFF" />
+
+                    <ImageButton
+                        android:id="@+id/btn_github"
+                        android:layout_width="0dp"
+                        android:layout_height="48dp"
+                        android:layout_weight="1"
+                        android:layout_marginStart="8dp"
+                        android:background="@drawable/stat_card_bg"
+                        android:src="@drawable/ic_github"
+                        android:contentDescription="@string/github"
+                        app:tint="#FFFFFF" />
+                </LinearLayout>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+</ScrollView>
