@@ -51,7 +51,6 @@ I believe in continuous learning and holding verifiable proofs of expertise.
 
 ### Hackathon & Open Source
 * **Hackathon Journey:** Completed a Proof Of Concept (**Xion**) involving the development of a Vendor App using APIs.
-* **Open Source Champion:** Recognized for contributions to popular Android libraries and frameworks.
 
 ---
 
